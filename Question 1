@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+int size;
+printf("Select size. 1 for small, 2 for medium, 3 for large.");
+scanf("%d",&size);
+switch (size)
+{
+    case 1:
+    printf("Small size selected.");
+    break;
+    case 2:
+    printf("Medium size selected.");
+    break;
+    case 3:
+    printf("Large size selected.");
+    break;
+    default:
+    printf("Invalid selection.");
+    break;
+}
+}
