@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+int amount;
+float total;
+printf("How many pizzas? (limited to 1, 2 or 3)");
+scanf("%d",&amount);
+switch (amount)
+{
+    case 1:
+    total=8;
+    break;
+    case 2:
+    total=15;
+    break;
+    case 3:
+    total=21;
+    break;
+    default:
+    printf("Invalid amount selected");
+    break;
+}
+printf("Your final package costs %f",total);
+}
