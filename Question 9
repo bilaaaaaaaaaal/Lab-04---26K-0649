@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+float total;
+printf("Enter total order amount.");
+scanf("%f",%total);
+int fulfillment;
+printf("Fulfillment option. 1 for pickup,2 for delivery.");
+scanf("%d",&fulfillment);
+if(fulfillment==1)
+{
+    total=total+0;
+}
+else if (fulfillment==2)
+{
+    total=total+3;
+}
+else
+{
+    printf("Invalid selection");
+}
+}
