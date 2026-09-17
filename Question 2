@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+int amount;
+float total;
+printf("How many pizzas?");
+scanf("%d",&amount);
+if (amount>1)
+{
+    printf("Check out our multi-pizza deals.");
+}
+else
+{
+    total=8;
+    printf("Your total is $8.");
+}
+}
