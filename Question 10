@@ -1,0 +1,132 @@
+#include <stdio.h>
+
+int main()
+{
+int size;
+int amount;
+int crust;
+int time;
+int fulfillment;
+char cheese;
+char id;
+float total;
+printf("Select size. 1 for small, 2 for medium, 3 for large.");
+scanf("%d",&size);
+switch (size)
+{
+    case 1:
+    printf("Small size selected.");
+    break;
+    case 2:
+    printf("Medium size selected.");
+    break;
+    case 3:
+    printf("Large size selected.");
+    break;
+    default:
+    printf("Invalid selection.");
+    break;
+}
+printf("How many pizzas? (limited to 1, 2 or 3)");
+scanf("%d",&amount);
+if (amount>1)
+{
+    printf("Check out our multi-pizza deals.");
+}
+else
+{
+    total=8;
+    printf("Your total is $8.");
+}
+switch (amount)
+{
+    case 1:
+    total=8;
+    break;
+    case 2:
+    total=15;
+    break;
+    case 3:
+    total=21;
+    break;
+    default:
+    printf("Invalid amount selected");
+    break;
+}
+printf("Your final package of %d costs %f",amount, total);
+printf("Select crust type. 1 for regular, 2 for thin, 3 for stuffed.");
+scanf("%d",&crust);
+switch (crust)
+{
+case 1:
+total=total+0;
+break;
+case 2:
+total=total+1;
+break;
+case 3:
+total=total+2;
+break;
+default:
+printf("Invalid selection.");
+break;
+}
+printf("The updated total bill is %f",total);
+printf("Do you want extra cheese? (Y/N)");
+scanf(" %c",&cheese);
+if(cheese=='y'||cheese=='Y')
+{
+    total=total+0.15;
+}
+else if (cheese=='n'||cheese=='N')
+{
+    total=total+0;
+}
+else
+{
+    printf("Invalid selection.");
+}
+printf("What time is it? (0-24)");
+scanf("%d",&time);
+if(time>11 && time<15)
+{
+    total=total*0.9;
+    printf("%f",total);
+}
+else
+{
+    printf("%f",total);
+}
+printf("Does the customer have a student ID? (Y/N)");
+scanf(" %c",&id);
+if(id=='y'||id=='Y');
+{
+    total=total-2;
+}
+if(total<0)
+{
+    total=0;
+}
+if(amount==3 && crust==3)
+{
+    printf("You get free garlic bread!");
+}
+else
+{
+    printf("Thank you for your order!");
+}
+printf("Fulfillment option. 1 for pickup,2 for delivery.");
+scanf("%d",&fulfillment);
+if(fulfillment==1)
+{
+    total=total+0;
+}
+else if (fulfillment==2)
+{
+    total=total+3;
+}
+else
+{
+    printf("Invalid selection");
+}
+}
