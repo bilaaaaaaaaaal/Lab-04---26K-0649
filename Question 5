@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+float total;
+char cheese;
+printf("Do you want extra cheese? (Y/N)");
+scanf(" %c",&cheese);
+if(cheese=='y'||cheese=='Y')
+{
+    total=total+0.15;
+}
+else if (cheese=='n'||cheese=='N')
+{
+    total=total+0;
+}
+else
+{
+    printf("Invalid selection.");
+}
+}
