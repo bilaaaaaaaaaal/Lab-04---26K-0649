@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+float total;
+int time;
+printf("What time is it? (0-24)");
+scanf("%d",&time);
+if(time>11 && time<15)
+{
+    total=total*0.9;
+    printf("%f",total);
+}
+else
+{
+    printf("%f",total);
+}
+}
