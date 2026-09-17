@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+float total;
+char id;
+printf("Does the customer have a student ID? (Y/N)");
+scanf(" %c",&id);
+if(id=='y'||id=='Y');
+{
+    total=total-2;
+}
+if(total<0)
+{
+    total=0;
+}
+}
